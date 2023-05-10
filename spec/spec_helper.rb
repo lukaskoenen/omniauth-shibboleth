@@ -1,5 +1,6 @@
 require 'rspec'
 require 'rack/test'
+require 'rack/session/cookie'
 require 'omniauth'
 require 'omniauth/version'
 require 'omniauth-shibboleth'

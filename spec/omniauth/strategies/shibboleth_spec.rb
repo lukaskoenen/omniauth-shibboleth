@@ -1,4 +1,3 @@
-#require 'pry-byebug'
 require 'spec_helper'
 
 def make_env(path = '/auth/shibboleth', props = {})
@@ -28,14 +27,14 @@ end
 
 describe OmniAuth::Strategies::Shibboleth do
   let(:app){ Rack::Builder.new do |b|
-    b.use Rack::Session::Cookie, {:secret => "abc123"}
+    b.use Rack::Session::Cookie, {:secret => "OTVJZXSTpoCFV37QeliMRZNeAfXqsAWciAp9msTWtpILqoBEIGtI5jo7FfswV9i7"}
     b.use OmniAuth::Strategies::Shibboleth
     b.run lambda{|env| [200, {}, ['Not Found']]}
   end.to_app }
 
   context 'request phase' do
     before do
-      get '/auth/shibboleth'
+      post '/auth/shibboleth'
     end
 
     it 'is expected to redirect to callback_url' do
