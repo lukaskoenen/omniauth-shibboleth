@@ -26,6 +26,8 @@ def empty_uid_failure_path
 end
 
 describe OmniAuth::Strategies::Shibboleth do
+  OmniAuth.config.request_validation_phase = nil # disable CSRF validation for tests
+
   let(:app){ Rack::Builder.new do |b|
     b.use Rack::Session::Cookie, {:secret => "OTVJZXSTpoCFV37QeliMRZNeAfXqsAWciAp9msTWtpILqoBEIGtI5jo7FfswV9i7"}
     b.use OmniAuth::Strategies::Shibboleth
