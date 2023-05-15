@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.files         = `find . -not \\( -regex ".*\\.git.*" -o -regex "\\./pkg.*" -o -regex "\\./spec.*" \\)`.split("\n").map{ |f| f.gsub(/^.\//, '') }
   gem.test_files    = `find spec/*`.split("\n")
-  gem.name          = "omniauth-shibboleth"
+  gem.name          = "omniauthv2-shibboleth"
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Shibboleth::VERSION
 
