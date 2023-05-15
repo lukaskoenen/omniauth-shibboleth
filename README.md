@@ -1,7 +1,9 @@
 # OmniAuth Shibboleth strategy
 
-[![Gem Version](http://img.shields.io/gem/v/omniauth-shibboleth.svg)](http://rubygems.org/gems/omniauth-shibboleth)
-[![Build Status](https://travis-ci.org/toyokazu/omniauth-shibboleth.svg?branch=master)](https://travis-ci.org/toyokazu/omniauth-shibboleth)
+![Gem Version](https://img.shields.io/gem/v/omniauthv2-shibboleth.svg)
+![Build Status](https://github.com/lukaskoenen/omniauth-shibboleth/actions/workflows/main.yml/badge.svg)
+
+https://rubygems.org/gems/omniauthv2-shibboleth
 
 OmniAuth Shibboleth strategy is an OmniAuth strategy for authenticating through Shibboleth (SAML). If you do not know OmniAuth, please visit OmniAuth wiki.
 
@@ -17,7 +19,7 @@ OmniAuth Shibboleth strategy uses the 'auth hash' for providing user attributes 
 
 Currently, this document is written for Rails applications. If you tried the other environments and it requires some difficulities, please let me know in the Issues page.
 
-https://github.com/toyokazu/omniauth-shibboleth/issues
+https://github.com/lukaskoenen/omniauth-shibboleth/pulls
 
 ## Getting Started
 
@@ -25,7 +27,7 @@ https://github.com/toyokazu/omniauth-shibboleth/issues
 
     % cd rails-app
     % vi Gemfile
-    gem 'omniauth-shibboleth'
+    gem 'omniauthv2-shibboleth'
     % bundle install
 
 ### Setup Shibboleth Strategy
