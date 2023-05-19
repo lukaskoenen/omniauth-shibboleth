@@ -13,8 +13,8 @@ Gem::Specification.new do |gem|
 
   gem.authors       = ["Toyokazu Akiyama"]
   gem.email         = ["toyokazu@gmail.com"]
-  gem.description   = %q{OmniAuth Shibboleth strategies for OmniAuth 1.x}
-  gem.summary       = %q{OmniAuth Shibboleth strategies for OmniAuth 1.x}
+  gem.description   = %q{OmniAuth Shibboleth strategies for OmniAuth 2.x}
+  gem.summary       = %q{OmniAuth Shibboleth strategies for OmniAuth 2.x}
   gem.homepage      = ""
 
   gem.files         = `find . -not \\( -regex ".*\\.git.*" -o -regex "\\./pkg.*" -o -regex "\\./spec.*" \\)`.split("\n").map{ |f| f.gsub(/^.\//, '') }
