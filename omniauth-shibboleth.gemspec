@@ -15,13 +15,11 @@ Gem::Specification.new do |gem|
   gem.email         = ["toyokazu@gmail.com"]
   gem.description   = %q{OmniAuth Shibboleth strategies for OmniAuth 2.x}
   gem.summary       = %q{OmniAuth Shibboleth strategies for OmniAuth 2.x}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/lukaskoenen/omniauth-shibboleth"
 
   gem.files         = `find . -not \\( -regex ".*\\.git.*" -o -regex "\\./pkg.*" -o -regex "\\./spec.*" \\)`.split("\n").map{ |f| f.gsub(/^.\//, '') }
   gem.test_files    = `find spec/*`.split("\n")
   gem.name          = "omniauthv2-shibboleth"
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Shibboleth::VERSION
-
-
 end
